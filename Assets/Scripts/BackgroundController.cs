@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
+    //Background names, can be changed later for easier sorting
     public GameObject background_1;
     public GameObject background_2;
     
@@ -22,6 +23,7 @@ public class BackgroundController : MonoBehaviour
         }
     }
 
+    //Going to set up a public index so other scripts can call the function and change background
     public void BackgroundIndex()
     {
         
