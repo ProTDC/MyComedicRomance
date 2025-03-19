@@ -44,8 +44,8 @@ public class DialogueManager : MonoBehaviour
             GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonsContainer);
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
             
-            buttonObj.GetComponent<Button>().onClick.AddListener(Clicked);
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponses(response, title));
+            Button button = buttonObj.GetComponent<Button>();
+            button.onClick.AddListener(() => SelectResponses(response, title));
         }
     }
 
@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 
     public void SelectResponses(DialogueResponse response, string title)
     {
-        if (response.nextNode.IsLastNode())
+        if (!response.nextNode.IsLastNode())
         {
             StartDialogue(title, response.nextNode);
         }
