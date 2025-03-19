@@ -44,8 +44,8 @@ public class DialogueManager : MonoBehaviour
             GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonsContainer);
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
             
-            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponses(response, title));
-            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(Clicked);
+            buttonObj.GetComponent<Button>().onClick.AddListener(Clicked);
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponses(response, title));
         }
     }
 
