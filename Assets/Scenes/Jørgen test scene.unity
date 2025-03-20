@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1160d4b0df337a741a513413b06781a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62909417e0edaa94f976f413485c049f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -221,10 +221,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 28886095}
   sprites:
-  - {fileID: 21300000, guid: 1160d4b0df337a741a513413b06781a2, type: 3}
-  - {fileID: 21300000, guid: 2d5ff5ebe096e5c48b0c38746af71470, type: 3}
-  - {fileID: 21300000, guid: f769e6468b4cfd146bff764bc05a938f, type: 3}
-  - {fileID: 21300000, guid: b976e0cc4f0fc264e8876669d6991140, type: 3}
+  - {fileID: 21300000, guid: 62909417e0edaa94f976f413485c049f, type: 3}
+  - {fileID: 21300000, guid: 7c58df9af1fc97148b77f45375e0a819, type: 3}
+  - {fileID: 21300000, guid: 27e22b8722836854cb088c03acc33f29, type: 3}
+  - {fileID: 21300000, guid: 035d15265fd8dac46ab6cee705168bfc, type: 3}
   - {fileID: 0}
   currentSprite: 0
 --- !u!1 &423594581
