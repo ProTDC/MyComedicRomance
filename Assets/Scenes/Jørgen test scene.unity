@@ -256,8 +256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a27f965c0adbb3c4da567abe20bada4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background_1: {fileID: 0}
-  background_2: {fileID: 0}
+  background_1: {fileID: 453095061}
+  background_2: {fileID: 1987381107}
+  background_3: {fileID: 1869731836}
+  currentBackground: 0
 --- !u!4 &423594584
 Transform:
   m_ObjectHideFlags: 0

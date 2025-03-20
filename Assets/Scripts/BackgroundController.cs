@@ -5,27 +5,31 @@ public class BackgroundController : MonoBehaviour
     //Background names, can be changed later for easier sorting
     public GameObject background_1;
     public GameObject background_2;
+    public GameObject background_3;
+    //Controls what background is active/disabled
+    public int currentBackground;
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (currentBackground == 0)
         {
-            Debug.Log("background 1");
             background_1.SetActive(true);
             background_2.SetActive(false);
+            background_3.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (currentBackground == 1)
         {
-            Debug.Log("background 2");
             background_1.SetActive(false);
             background_2.SetActive(true);
+            background_3.SetActive(false);
         }
-    }
 
-    //Going to set up a public index so other scripts can call the function and change background
-    public void BackgroundIndex()
-    {
-        
+        if (currentBackground == 2)
+        {
+            background_1.SetActive(false);
+            background_2.SetActive(false);
+            background_3.SetActive(true);
+        }
     }
 }
