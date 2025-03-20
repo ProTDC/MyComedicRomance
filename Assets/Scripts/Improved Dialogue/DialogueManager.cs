@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -32,7 +33,14 @@ public class DialogueManager : MonoBehaviour
         ShowDialogue();
         
         dialogueTitleText.text = title;
-        dialogueBodyText.text = node.dialogueText;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(node.dialogueText));
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StopAllCoroutines();
+            dialogueBodyText.text = node.dialogueText;
+        }
 
         foreach (Transform child in responseButtonsContainer)
         {
@@ -49,9 +57,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void Clicked()
+    IEnumerator TypeSentence(string sentence)
     {
-        Debug.Log("Clicked");
+        dialogueBodyText.text = string.Empty;
+
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueBodyText.text += letter;
+            yield return new WaitForSeconds(.05f);
+        }
     }
 
     public void SelectResponses(DialogueResponse response, string title)
