@@ -11,6 +11,7 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private Toggle fullButton;
     
     Resolution[] resolutions;
 
@@ -49,6 +50,12 @@ public class SettingsMenu : MonoBehaviour
             SetSFXVolume();
             PlayerPrefs.Save();
         }
+        
+        if (PlayerPrefs.HasKey("isFullscreen"))
+        {
+            bool isOn = Convert.ToBoolean(PlayerPrefs.GetString("isFullscreen"));
+            fullButton.isOn = isOn;
+        }
     }
     
     public void SetResolution(int resolutionIndex)
@@ -79,6 +86,13 @@ public class SettingsMenu : MonoBehaviour
 
         SetMusicVolume();
         SetSFXVolume();
+        PlayerPrefs.Save();
+    }
+    
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+        PlayerPrefs.SetString("isFullscreen", isFullscreen.ToString());
         PlayerPrefs.Save();
     }
 }
