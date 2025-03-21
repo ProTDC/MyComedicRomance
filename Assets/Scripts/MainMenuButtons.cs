@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenuButtons : MonoBehaviour
 {
+    [SerializeField] private GameObject settingsMenu;
+    
+    
+    
     public void PlayGame()
     {
         Debug.Log("Play");
@@ -11,6 +15,7 @@ public class MainMenuButtons : MonoBehaviour
     public void EnterSettings()
     {
         Debug.Log("Enter Settings");
+        settingsMenu.SetActive(true);
         //Add function for initiating settings screen?
     }
 
