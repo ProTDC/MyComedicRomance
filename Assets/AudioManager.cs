@@ -4,8 +4,6 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioMixer masterMixer;
-    
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
@@ -20,14 +18,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void SetMusicVolume(float volume)
+    public void ChangeMusic(AudioClip clip)
     {
-        masterMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
+        musicSource.Stop();
+        musicSource.clip = clip;
+        musicSource.Play();
     }
-    
-    public void SetSFXVolume(float volume)
+
+    public void PlaySFX(AudioClip clip)
     {
-        masterMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20);
+        sfxSource.PlayOneShot(clip);
     }
     
 }
