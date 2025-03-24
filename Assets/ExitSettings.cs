@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ExitSettings : MonoBehaviour
 {
     [SerializeField]private Button exitButton;
+    [SerializeField]private MainMenuButtons mainMenu;
 
     private void Update()
     {
@@ -15,5 +16,6 @@ public class ExitSettings : MonoBehaviour
     private void QuitSettings()
     {
         gameObject.SetActive(false);
+        mainMenu.OnExitSettings();
     }
 }

@@ -129,10 +129,10 @@ TextureImporter:
       name: Front_Settings_Background_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 182
+        y: 73
+        width: 3513
+        height: 1977
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
