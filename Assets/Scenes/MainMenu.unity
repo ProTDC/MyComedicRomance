@@ -1550,7 +1550,7 @@ MonoBehaviour:
   musicSlider: {fileID: 475244175}
   sfxSlider: {fileID: 1783643375}
   audioMixer: {fileID: 24100000, guid: f045b2176ab528e4ea1db9013b5991d0, type: 2}
-  fullButton: {fileID: 0}
+  fullButton: {fileID: 1644873525}
 --- !u!1001 &797511201
 PrefabInstance:
   m_ObjectHideFlags: 0
