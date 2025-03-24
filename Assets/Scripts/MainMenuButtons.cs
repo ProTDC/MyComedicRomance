@@ -12,7 +12,7 @@ public class MainMenuButtons : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play");
-        //SceneManager.LoadScene(insertSceneHere);
+        SceneManager.LoadScene(1);
     }
 
     public void EnterSettings()

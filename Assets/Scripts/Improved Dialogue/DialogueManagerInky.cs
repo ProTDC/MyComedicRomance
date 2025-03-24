@@ -7,6 +7,7 @@ using NUnit.Framework.Constraints;
 using TMPro;
 using UnityEditor;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManagerInky : MonoBehaviour
@@ -45,16 +46,17 @@ public class DialogueManagerInky : MonoBehaviour
             {
                 AdvanceDialogue();
             }
-            // else
-            // {
-            //     FinishDialogue();
-            // }
+            else
+            {
+                FinishDialogue();
+            }
         }
     }
     
     private void FinishDialogue()
     {
         Debug.Log("End of Dialogue!");
+        SceneManager.LoadScene(2);
     }
     
     void AdvanceDialogue()
