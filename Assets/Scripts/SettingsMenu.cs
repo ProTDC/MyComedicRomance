@@ -20,6 +20,7 @@ public class SettingsMenu : MonoBehaviour
         resolutions = Screen.resolutions;
         
         resolutionDropdown.ClearOptions();
+        Debug.Log("Resolutions reset!");
         
         List<string> options = new List<string>();
 

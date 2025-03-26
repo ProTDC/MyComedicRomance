@@ -16,17 +16,18 @@ public class DialogueManagerInky : MonoBehaviour
     public TextMeshProUGUI nametag;
     public TextMeshProUGUI message;
     public GameObject buttonPrefab;
-    private List<Button> choiceButtons = new List<Button>();
     public GameObject optionPanel;
-    public bool isTalking = false;
 
     public SpriteControllerUI spriteController;
+    public BackgroundControllerUI backgroundController;
     
     static Story story;
     List<string> tags;
     private const string speakerTag = "speaker";
     private const string spriteTag = "sprite";
+    private const string backgroundTag = "background";
     static Choice choiceSelected;
+    public bool storyHalted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class DialogueManagerInky : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && !storyHalted)
         {
             if(story.canContinue)
             {
@@ -56,7 +57,7 @@ public class DialogueManagerInky : MonoBehaviour
     private void FinishDialogue()
     {
         Debug.Log("End of Dialogue!");
-        SceneManager.LoadScene(2);
+        // SceneManager.LoadScene(2);
     }
     
     void AdvanceDialogue()
@@ -84,6 +85,15 @@ public class DialogueManagerInky : MonoBehaviour
     private void DisplayChoices()
     {
         List<Choice> currentChoices = story.currentChoices;
+
+        if (currentChoices.Count > 0)
+        {
+            storyHalted = true;
+        }
+        else
+        {
+            return;
+        }
         
         if (optionPanel.transform.childCount > 0)
         {
@@ -107,6 +117,8 @@ public class DialogueManagerInky : MonoBehaviour
         {
             Destroy(button.gameObject);
         }
+        
+        storyHalted = false;
     }
 
     public void MakeChoice(int choiceIndex)
@@ -131,6 +143,9 @@ public class DialogueManagerInky : MonoBehaviour
 
             switch (tagKey)
             {
+                case backgroundTag:
+                    backgroundController.ChangeBackground(tagValue);
+                    break;
                 case speakerTag:
                     nametag.text = tagValue;
                     break;
