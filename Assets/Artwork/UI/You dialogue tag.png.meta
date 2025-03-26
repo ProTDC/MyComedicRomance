@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fed90027aba47e8409a365d856919497
+guid: cafa94349b6301f4ab1499616cba7a55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3783763474663129461
-    second: Remy dialogue tag_0
+      213: -2141193938952933208
+    second: You dialogue tag_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Remy dialogue tag_0
+      name: You dialogue tag_0
       rect:
         serializedVersion: 2
         x: 242
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8e3b92ca2f5d7bc0800000000000000
-      internalID: -3783763474663129461
+      spriteID: 8a0bd710573f842e0800000000000000
+      internalID: -2141193938952933208
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Remy dialogue tag_0: -3783763474663129461
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,8 @@ using UnityEngine.UI;
 public class DialogueManagerInky : MonoBehaviour
 {
     public TextAsset inkFile;
-    public TextMeshProUGUI nametag;
+    public GameObject[] nameTags;
+    private Dictionary<string, int> nameTagDictionary = new Dictionary<string, int>();
     public TextMeshProUGUI message;
     public GameObject buttonPrefab;
     public GameObject optionPanel;
@@ -32,6 +33,9 @@ public class DialogueManagerInky : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nameTagDictionary.Add("player", 0);
+        nameTagDictionary.Add("remi", 1);
+        
         story = new Story(inkFile.text);
         tags = new List<string>();
         choiceSelected = null;
@@ -62,7 +66,11 @@ public class DialogueManagerInky : MonoBehaviour
     
     void AdvanceDialogue()
     {
-        nametag.text = string.Empty;
+        foreach (GameObject item in nameTags)
+        {
+            item.SetActive(false);
+        }
+        
         string currentSentence = story.Continue();
         ParseTags(story.currentTags);
         DisplayChoices();
@@ -147,7 +155,7 @@ public class DialogueManagerInky : MonoBehaviour
                     backgroundController.ChangeBackground(tagValue);
                     break;
                 case speakerTag:
-                    nametag.text = tagValue;
+                    nameTags[nameTagDictionary[tagValue]].SetActive(true);
                     break;
                 case spriteTag:
                     spriteController.ChangeSprite(tagValue);
