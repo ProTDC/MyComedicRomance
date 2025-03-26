@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09d8ab2943166441b32af44aae13ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSettingsButton: {fileID: 5929929039574370511}
+  gameSettingsButton: {fileID: 5499720616467272599}
   settingsMenu: {fileID: 0}
 --- !u!1 &5929929039574370511
 GameObject:
@@ -171,9 +171,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
-        m_MethodName: EnterSettings
+      - m_Target: {fileID: 2661988856912436827}
+        m_TargetAssemblyTypeName: SettingsButton, Assembly-CSharp
+        m_MethodName: EnterIngameSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
