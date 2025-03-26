@@ -1,12 +1,12 @@
-using System;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ExitSettings : MonoBehaviour
 {
     [SerializeField]private Button exitButton;
     [SerializeField]private MainMenuButtons mainMenu;
+    [SerializeField]private SettingsButton gameplaySettings;
 
     private void Update()
     {
@@ -15,7 +15,18 @@ public class ExitSettings : MonoBehaviour
 
     private void QuitSettings()
     {
-        gameObject.SetActive(false);
-        mainMenu.OnExitSettings();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "MainMenu")
+        {
+            Debug.Log("Exiting Menu Settings");
+            gameObject.SetActive(false);
+            mainMenu.OnExitSettings();
+        }
+        else
+        {
+            Debug.Log("Exiting Gameplay Settings");
+            gameObject.SetActive(false);
+            gameplaySettings.ExitIngameSettings();
+        }
     }
 }
