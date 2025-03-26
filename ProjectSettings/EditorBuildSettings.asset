@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 1006a5fc89b2df84fad91865bf535f3a
   - enabled: 1
-    path: Assets/Scenes/DialogueTesting.unity
+    path: Assets/Scenes/RemiScene.unity
     guid: 142aad63074708c4f86e53e75371a398
   - enabled: 1
     path: Assets/Scenes/Endofplaytest.unity
