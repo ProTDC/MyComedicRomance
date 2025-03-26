@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: dd1681bef77daa84bb80c85aa0f82989
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7422175311199522831
+    second: Logo_MyComidicRomance_0
+  - first:
+      213: -2524916704972084131
+    second: Logo_MyComidicRomance_1
+  - first:
+      213: 1621857487954836268
+    second: Logo_MyComidicRomance_2
+  - first:
+      213: -5954090133364074580
+    second: Logo_MyComidicRomance_3
+  - first:
+      213: -7956109068834200714
+    second: Logo_MyComidicRomance_4
+  - first:
+      213: -8864890877402980915
+    second: Logo_MyComidicRomance_5
+  - first:
+      213: -168849402111085863
+    second: Logo_MyComidicRomance_6
+  - first:
+      213: 7387900949734295745
+    second: Logo_MyComidicRomance_7
+  - first:
+      213: -7202175017511803788
+    second: Logo_MyComidicRomance_8
+  - first:
+      213: 5614221003536704229
+    second: Logo_MyComidicRomance_9
+  - first:
+      213: -3498203194992769111
+    second: Logo_MyComidicRomance_10
+  - first:
+      213: -6475759951574289227
+    second: Logo_MyComidicRomance_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_0
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 3008
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff274bf0e22ff890800000000000000
+      internalID: -7422175311199522831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_1
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 3009
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c60b862a1b5fcd0800000000000000
+      internalID: -2524916704972084131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_2
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1952
+        width: 472
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bfad5dacef18610800000000000000
+      internalID: 1621857487954836268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_3
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 2161
+        width: 429
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca71d20e192de5da0800000000000000
+      internalID: -5954090133364074580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_4
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2323
+        width: 386
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673afd584f8369190800000000000000
+      internalID: -7956109068834200714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_5
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 2398
+        width: 324
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd5bc717b499f480800000000000000
+      internalID: -8864890877402980915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_6
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 2344
+        width: 384
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d2b1a60d5028adf0800000000000000
+      internalID: -168849402111085863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_7
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 2256
+        width: 263
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c80fa065c8178660800000000000000
+      internalID: 7387900949734295745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_8
+      rect:
+        serializedVersion: 2
+        x: 3149
+        y: 1951
+        width: 520
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4742407fafbbc0c90800000000000000
+      internalID: -7202175017511803788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_9
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1715
+        width: 359
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2a75ed148b9ed40800000000000000
+      internalID: 5614221003536704229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_10
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 463
+        width: 2223
+        height: 1722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7c15a7ab2e37fc0800000000000000
+      internalID: -3498203194992769111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo_MyComidicRomance_11
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 1779
+        width: 426
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4b6b352aa7126a0800000000000000
+      internalID: -6475759951574289227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Logo_MyComidicRomance_0: -7422175311199522831
+      Logo_MyComidicRomance_1: -2524916704972084131
+      Logo_MyComidicRomance_10: -3498203194992769111
+      Logo_MyComidicRomance_11: -6475759951574289227
+      Logo_MyComidicRomance_2: 1621857487954836268
+      Logo_MyComidicRomance_3: -5954090133364074580
+      Logo_MyComidicRomance_4: -7956109068834200714
+      Logo_MyComidicRomance_5: -8864890877402980915
+      Logo_MyComidicRomance_6: -168849402111085863
+      Logo_MyComidicRomance_7: 7387900949734295745
+      Logo_MyComidicRomance_8: -7202175017511803788
+      Logo_MyComidicRomance_9: 5614221003536704229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
