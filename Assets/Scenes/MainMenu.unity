@@ -419,6 +419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5526741092383774067, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6883450037703070934, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
       propertyPath: Loop
       value: 1
@@ -431,6 +435,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7985645463572210887, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
+      propertyPath: sfxClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e6460ebe170e92b428499392a95e7936, type: 3}
     - target: {fileID: 7985645463572210887, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
       propertyPath: musicClip
       value: 
@@ -952,6 +960,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 533360ac8ac522d4889c16e8e1bc78da, type: 3}
+        m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

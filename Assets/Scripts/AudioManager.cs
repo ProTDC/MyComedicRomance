@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfxSource;
 
     public AudioClip musicClip;
+    public AudioClip sfxClip;
 
     private void Start()
     {
@@ -15,6 +16,11 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.clip = musicClip;
             musicSource.Play();
+        }
+
+        if (sfxClip != null)
+        {
+            sfxSource.clip = sfxClip;
         }
     }
 

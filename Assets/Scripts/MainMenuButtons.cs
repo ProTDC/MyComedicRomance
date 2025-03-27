@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,7 @@ public class MainMenuButtons : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play");
-        SceneManager.LoadScene(1);
+        StartCoroutine(waiter());
     }
 
     public void EnterSettings()
@@ -40,5 +41,11 @@ public class MainMenuButtons : MonoBehaviour
         #else
         Application.Quit();
         #endif
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(1);
     }
 }
