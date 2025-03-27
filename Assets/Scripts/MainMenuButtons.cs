@@ -13,7 +13,7 @@ public class MainMenuButtons : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play");
-        StartCoroutine(waiter());
+        StartCoroutine(waitThenPlay());
     }
 
     public void EnterSettings()
@@ -36,16 +36,22 @@ public class MainMenuButtons : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit");
+        StartCoroutine(waitThenQuit());
+    }
+
+    IEnumerator waitThenPlay()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(1);
+    }
+    
+    IEnumerator waitThenQuit()
+    {
+        yield return new WaitForSeconds(2);
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else
         Application.Quit();
         #endif
-    }
-
-    IEnumerator waiter()
-    {
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(1);
     }
 }

@@ -367,17 +367,12 @@ MonoBehaviour:
   sfxSlider: {fileID: 1783643375}
   audioMixer: {fileID: 24100000, guid: f045b2176ab528e4ea1db9013b5991d0, type: 2}
   fullButton: {fileID: 1644873525}
---- !u!1 &789316447 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3038256003783545653, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
-  m_PrefabInstance: {fileID: 797511201}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &789316448 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7985645463572210887, guid: b9430be27a1ed1548a477989a2fba9f4, type: 3}
   m_PrefabInstance: {fileID: 797511201}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789316447}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 533360ac8ac522d4889c16e8e1bc78da, type: 3}
@@ -702,6 +697,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 789316448}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: abbde409e9308d34e851da29b4780574, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1317260577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,18 +1007,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: e6460ebe170e92b428499392a95e7936, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 789316447}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
