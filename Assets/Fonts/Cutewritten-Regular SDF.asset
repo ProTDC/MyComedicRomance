@@ -173,10 +173,10 @@ MonoBehaviour:
     m_FamilyName: Cutewritten
     m_StyleName: Regular
     m_PointSize: 108
-    m_Scale: 1
+    m_Scale: 1.15
     m_UnitsPerEM: 1000
-    m_LineHeight: 95.472
-    m_AscentLine: 72.252
+    m_LineHeight: 100
+    m_AscentLine: 100
     m_CapLine: 67
     m_MeanLine: 55
     m_Baseline: 0
