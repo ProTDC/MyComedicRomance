@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Danger_Under_1000_Background_0: 2981977275046123865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

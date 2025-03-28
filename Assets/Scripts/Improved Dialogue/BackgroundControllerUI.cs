@@ -48,6 +48,9 @@ public class BackgroundControllerUI : MonoBehaviour
             case "trashbag":
                 currentBackground = 4;
                 break;
+            case "cg1":
+                currentBackground = 5;
+                break;
         }
         
         backgroundImage.sprite = backgrounds[currentBackground];

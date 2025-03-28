@@ -27,6 +27,7 @@ public class DialogueManagerInky : MonoBehaviour
     private const string speakerTag = "speaker";
     private const string spriteTag = "sprite";
     private const string backgroundTag = "background";
+    private const string visibilityTag = "visible";
     static Choice choiceSelected;
     public bool storyHalted = false;
 
@@ -35,6 +36,7 @@ public class DialogueManagerInky : MonoBehaviour
     {
         nameTagDictionary.Add("player", 0);
         nameTagDictionary.Add("remi", 1);
+        nameTagDictionary.Add("ringmaster", 2);
         
         story = new Story(inkFile.text);
         tags = new List<string>();
@@ -61,7 +63,7 @@ public class DialogueManagerInky : MonoBehaviour
     private void FinishDialogue()
     {
         Debug.Log("End of Dialogue!");
-        // SceneManager.LoadScene(2);
+        SceneManager.LoadScene(2);
     }
     
     void AdvanceDialogue()
@@ -159,6 +161,16 @@ public class DialogueManagerInky : MonoBehaviour
                     break;
                 case spriteTag:
                     spriteController.ChangeSprite(tagValue);
+                    break;
+                case visibilityTag:
+                    if (tagValue == "true")
+                    {
+                        spriteController.ChangeOpacity(1);
+                    }
+                    if (tagValue == "false")
+                    {
+                        spriteController.ChangeOpacity(0);
+                    }
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
