@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundController : MonoBehaviour
 {
@@ -36,5 +37,17 @@ public class BackgroundController : MonoBehaviour
         yield return new WaitForSeconds(1);
         background.sprite = backgrounds[currentBackground];
         fade.SetTrigger("FadeIn");
+    }
+    
+    public void RemyButton()
+    {
+        StartCoroutine(RemyRoute());
+    }
+
+    IEnumerator RemyRoute()
+    {
+        fade.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("RemiScene");
     }
 }
