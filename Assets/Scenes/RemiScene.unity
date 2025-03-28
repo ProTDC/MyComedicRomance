@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6998de43b4a5c0241814c837c3eb0adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: 96587879c6652df418f53b40022ed956, type: 3}
+  inkFile: {fileID: 4900000, guid: f100faa6c3ee80246ba2a2a254205d87, type: 3}
   nameTags:
   - {fileID: 886208665}
   - {fileID: 1968978797}
