@@ -63,7 +63,7 @@ public class DialogueManagerInky : MonoBehaviour
     private void FinishDialogue()
     {
         Debug.Log("End of Dialogue!");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     
     void AdvanceDialogue()
