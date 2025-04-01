@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 823d849bc0ef2464886efd07cb82ea45
+guid: 2be22316df87fcb438d5b12902554f45
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5445572673381901109
-    second: ringleader dialogue tag_0
+      213: 4064570536887805878
+    second: ringleader shocked_02_0
+  - first:
+      213: -6809321374993883079
+    second: ringleader shocked_02_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ringleader dialogue tag_0
+      name: ringleader shocked_02_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 606
-        width: 888
-        height: 378
+        x: 493
+        y: 0
+        width: 1413
+        height: 2150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 533a08b9e7f829b40800000000000000
-      internalID: 5445572673381901109
+      spriteID: 6b767b74e51486830800000000000000
+      internalID: 4064570536887805878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ringleader shocked_02_1
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 761
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930e30a694e6081a0800000000000000
+      internalID: -6809321374993883079
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ringleader dialogue tag_0: 5445572673381901109
+      ringleader shocked_02_0: 4064570536887805878
+      ringleader shocked_02_1: -6809321374993883079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

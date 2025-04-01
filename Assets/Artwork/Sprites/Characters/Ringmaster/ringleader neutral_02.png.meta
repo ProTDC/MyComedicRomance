@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 823d849bc0ef2464886efd07cb82ea45
+guid: 24f86cce00402b84d9cf8962d7c8cfff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5445572673381901109
-    second: ringleader dialogue tag_0
+      213: 169664960594299594
+    second: ringleader neutral_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ringleader dialogue tag_0
+      name: ringleader neutral_02_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 606
-        width: 888
-        height: 378
+        x: 388
+        y: 0
+        width: 1332
+        height: 2150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 533a08b9e7f829b40800000000000000
-      internalID: 5445572673381901109
+      spriteID: acacd0bf165ca5200800000000000000
+      internalID: 169664960594299594
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ringleader dialogue tag_0: 5445572673381901109
+      ringleader neutral_02_0: 169664960594299594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 823d849bc0ef2464886efd07cb82ea45
+guid: 2fdcf0cbcfdc0924ba58a092d81f0418
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5445572673381901109
-    second: ringleader dialogue tag_0
+      213: 3416401418570891404
+    second: ringleader angry_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ringleader dialogue tag_0
+      name: ringleader angry_02_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 606
-        width: 888
-        height: 378
+        x: 351
+        y: 0
+        width: 1673
+        height: 2150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 533a08b9e7f829b40800000000000000
-      internalID: 5445572673381901109
+      spriteID: c800f044dfe796f20800000000000000
+      internalID: 3416401418570891404
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ringleader dialogue tag_0: 5445572673381901109
+      ringleader angry_02_0: 3416401418570891404
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
