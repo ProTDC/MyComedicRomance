@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 823d849bc0ef2464886efd07cb82ea45
+guid: 80b61a7a6cd7c1d4c9b03f6b030bb9ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5445572673381901109
-    second: ringleader dialogue tag_0
+      213: 1397159148824215398
+    second: Castle_Selection Area_Backgrounds_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ringleader dialogue tag_0
+      name: Castle_Selection Area_Backgrounds_0
       rect:
         serializedVersion: 2
-        x: 241
-        y: 606
-        width: 888
-        height: 378
+        x: 1548
+        y: 666
+        width: 1230
+        height: 993
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 533a08b9e7f829b40800000000000000
-      internalID: 5445572673381901109
+      spriteID: 66fba58e7d4b36310800000000000000
+      internalID: 1397159148824215398
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ringleader dialogue tag_0: 5445572673381901109
+      Castle_Selection Area_Backgrounds_0: 1397159148824215398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
