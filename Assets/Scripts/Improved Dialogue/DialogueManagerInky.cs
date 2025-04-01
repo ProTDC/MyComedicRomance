@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
+using NUnit.Framework.Constraints;
 using TMPro;
+using UnityEditor;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class DialogueManagerInky : MonoBehaviour
@@ -13,14 +15,11 @@ public class DialogueManagerInky : MonoBehaviour
     public TextAsset inkFile;
     public GameObject[] nameTags;
     private Dictionary<string, int> nameTagDictionary = new Dictionary<string, int>();
-    private AudioManager audioManager;
-    public AudioClip[] music; 
     public TextMeshProUGUI message;
     public GameObject buttonPrefab;
     public GameObject optionPanel;
 
-    public SpriteControllerRemyUI spriteControllerRemy;
-    public SpriteControllerRingmasterUI spriteControllerRingmaster;
+    public SpriteControllerUI spriteController;
     public BackgroundControllerUI backgroundController;
     
     static Story story;
@@ -28,22 +27,20 @@ public class DialogueManagerInky : MonoBehaviour
     private const string speakerTag = "speaker";
     private const string spriteTag = "sprite";
     private const string backgroundTag = "background";
-    private const string visibilityTag = "visibility";
-    private const string ringmasterVisibilityTag = "ringmastervisibility";
+    private const string visibilityTag = "visible";
+    static Choice choiceSelected;
     public bool storyHalted = false;
-    private string currentCharacter = string.Empty;
 
+    // Start is called before the first frame update
     void Start()
     {
-        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-        
         nameTagDictionary.Add("player", 0);
         nameTagDictionary.Add("remi", 1);
         nameTagDictionary.Add("ringmaster", 2);
-        nameTagDictionary.Add("question", 3);
         
         story = new Story(inkFile.text);
         tags = new List<string>();
+        choiceSelected = null;
         
         Invoke(nameof(AdvanceDialogue), 1f);
     }
@@ -160,40 +157,20 @@ public class DialogueManagerInky : MonoBehaviour
                     backgroundController.ChangeBackground(tagValue);
                     break;
                 case speakerTag:
-                    currentCharacter = tagValue;
                     nameTags[nameTagDictionary[tagValue]].SetActive(true);
                     break;
-                
                 case spriteTag:
-                    Debug.Log(currentCharacter);
-                    if (currentCharacter == "remi" || currentCharacter == "question")
-                    {
-                        spriteControllerRemy.ChangeSpriteRemy(tagValue);
-                    }
-                    if (currentCharacter == "ringmaster")
-                    {
-                        Debug.Log(tagValue);
-                        spriteControllerRingmaster.ChangeSpriteRingmaster(tagValue);
-                    }
+                    spriteController.ChangeSprite(tagValue);
                     break;
-                
                 case visibilityTag:
                     if (tagValue == "true")
                     {
-                        spriteControllerRemy.ChangeOpacity(1);
+                        spriteController.ChangeOpacity(1);
                     }
                     if (tagValue == "false")
                     {
-                        spriteControllerRemy.ChangeOpacity(0);
+                        spriteController.ChangeOpacity(0);
                     }
-                    break;
-                
-                case ringmasterVisibilityTag:
-                    if (tagValue == "false")
-                    {
-                        spriteControllerRingmaster.ChangeOpacity(0);
-                    }
-
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

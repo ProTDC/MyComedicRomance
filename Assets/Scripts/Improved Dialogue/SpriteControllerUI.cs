@@ -1,36 +1,40 @@
+using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpriteControllerRingmasterUI : MonoBehaviour
+public class SpriteControllerUI : MonoBehaviour
 {
     private Image image;
     public Sprite[] sprites;
     public int currentSprite = 0;
-
+    
+    
+    
     void Start()
     {
         image = gameObject.GetComponent<Image>();
-
+        
         ChangeOpacity(0);
     }
 
-    public void ChangeSpriteRingmaster(string spriteName)
+    public void ChangeSprite(string spriteName)
     {
         ChangeOpacity(1);
-
         switch (spriteName)
         {
             case "neutral":
                 currentSprite = 0;
                 break;
-            case "angry":
+            case "call":
                 currentSprite = 1;
                 break;
-            case "shocked":
+            case "shy":
                 currentSprite = 2;
                 break;
+            case "angi":
+                currentSprite = 3;
+                break;
         }
-
         image.sprite = sprites[currentSprite];
     }
     
