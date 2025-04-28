@@ -55,10 +55,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533360ac8ac522d4889c16e8e1bc78da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterMixer: {fileID: 24100000, guid: f045b2176ab528e4ea1db9013b5991d0, type: 2}
   musicSource: {fileID: 6883450037703070934}
   sfxSource: {fileID: 5526741092383774067}
-  musicClip: {fileID: 8300000, guid: 688e0708091f30c4896eb05989df2d55, type: 3}
+  normalTheme: {fileID: 8300000, guid: 688e0708091f30c4896eb05989df2d55, type: 3}
+  sadTheme: {fileID: 8300000, guid: a4ccf92084f8fd043bcff11eccd74df6, type: 3}
+  intenseTheme: {fileID: 8300000, guid: 704ea57a04c0e5d4fac9840239b3c5cd, type: 3}
 --- !u!1 &7346287929292210264
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +236,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

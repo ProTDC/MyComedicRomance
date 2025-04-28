@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: bfb5f0ed11d9f304f99563d4d7d84610
+guid: b943501357c8bc24a948edc48fcab8ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8304036066866158960
-    second: Button_Dialog Options_0
-  - first:
-      213: -8017943182956541692
-    second: Button_Dialog Options_1
+      213: 800059224611888055
+    second: Dialog Choice_Box_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_Dialog Options_0
+      name: Dialog Choice_Box_0
       rect:
         serializedVersion: 2
-        x: 1810
-        y: 894
-        width: 14
-        height: 18
+        x: 3
+        y: 3
+        width: 1037
+        height: 444
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07dd69f5eccdd3370800000000000000
-      internalID: 8304036066866158960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Button_Dialog Options_1
-      rect:
-        serializedVersion: 2
-        x: 1825
-        y: 729
-        width: 817
-        height: 333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4094c9ee72b8ab090800000000000000
-      internalID: -8017943182956541692
+      spriteID: 7bb144a30a16a1b00800000000000000
+      internalID: 800059224611888055
       vertices: []
       indices: 
       edges: []
@@ -185,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Button_Dialog Options_0: 8304036066866158960
-      Button_Dialog Options_1: -8017943182956541692
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -119,12 +119,12 @@ TextureImporter:
       name: ringleader shocked_02_0
       rect:
         serializedVersion: 2
-        x: 493
+        x: 0
         y: 0
-        width: 1413
+        width: 2426
         height: 2150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 6
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a1e50ed3b2179d14ba8867add05a7b30
     internalID: 0
     vertices: []
     indices: 

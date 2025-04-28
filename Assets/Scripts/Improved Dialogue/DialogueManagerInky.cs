@@ -14,10 +14,10 @@ public class DialogueManagerInky : MonoBehaviour
     public GameObject[] nameTags;
     private Dictionary<string, int> nameTagDictionary = new Dictionary<string, int>();
     private AudioManager audioManager;
-    public AudioClip[] music; 
     public TextMeshProUGUI message;
     public GameObject buttonPrefab;
     public GameObject optionPanel;
+    public GameObject dialoguePanel;
 
     public SpriteControllerRemyUI spriteControllerRemy;
     public SpriteControllerRingmasterUI spriteControllerRingmaster;
@@ -28,6 +28,7 @@ public class DialogueManagerInky : MonoBehaviour
     private const string speakerTag = "speaker";
     private const string spriteTag = "sprite";
     private const string backgroundTag = "background";
+    private const string musicTag = "music";
     private const string visibilityTag = "visibility";
     private const string ringmasterVisibilityTag = "ringmastervisibility";
     public bool storyHalted = false;
@@ -44,6 +45,19 @@ public class DialogueManagerInky : MonoBehaviour
         
         story = new Story(inkFile.text);
         tags = new List<string>();
+
+        if (spriteControllerRemy == null)
+        {
+            Debug.LogWarning("Remi's SpriteController is not set!");
+        }
+        if (spriteControllerRingmaster == null)
+        {
+            Debug.LogWarning("The Ringmaster's SpriteController is not set!");
+        }
+        if (backgroundController == null)
+        {
+            Debug.LogWarning("The BackgroundController is not set!");
+        }
         
         Invoke(nameof(AdvanceDialogue), 1f);
     }
@@ -66,7 +80,13 @@ public class DialogueManagerInky : MonoBehaviour
     private void FinishDialogue()
     {
         Debug.Log("End of Dialogue!");
-        SceneManager.LoadScene(3);
+        Destroy(dialoguePanel);
+        Destroy(message);
+        
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
     
     void AdvanceDialogue()
@@ -165,15 +185,25 @@ public class DialogueManagerInky : MonoBehaviour
                     break;
                 
                 case spriteTag:
-                    Debug.Log(currentCharacter);
                     if (currentCharacter == "remi" || currentCharacter == "question")
                     {
                         spriteControllerRemy.ChangeSpriteRemy(tagValue);
                     }
                     if (currentCharacter == "ringmaster")
                     {
-                        Debug.Log(tagValue);
                         spriteControllerRingmaster.ChangeSpriteRingmaster(tagValue);
+                    }
+                    break;
+                
+                case musicTag:
+                    Debug.Log(tagValue);
+                    if (tagValue == "none")
+                    {
+                        audioManager.StopMusic();
+                    }
+                    else
+                    {
+                        audioManager.ChangeMusic(tagValue);
                     }
                     break;
                 

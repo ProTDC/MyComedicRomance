@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2fdcf0cbcfdc0924ba58a092d81f0418
+guid: de80fc5fe46dc3f4985d3af34bd6abd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3416401418570891404
-    second: ringleader angry_02_0
+      213: 9125036525819080240
+    second: u died_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ringleader angry_02_0
+      name: u died_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2426
-        height: 2150
+        width: 3840
+        height: 2160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c800f044dfe796f20800000000000000
-      internalID: 3416401418570891404
+      spriteID: 03e29ebaf54a2ae70800000000000000
+      internalID: 9125036525819080240
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0320c1ed655256a498e2f22a07743b58
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ringleader angry_02_0: 3416401418570891404
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

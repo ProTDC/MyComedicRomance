@@ -1,33 +1,45 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    private Dictionary<string, AudioClip> musicDictionary = new Dictionary<string, AudioClip>();
+    
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
-    public AudioClip musicClip;
-    public AudioClip sfxClip;
+    public AudioClip normalTheme;
+
+    public AudioClip sadTheme;
+    public AudioClip intenseTheme;
 
     private void Start()
     {
-        if (musicClip != null)
+        if (normalTheme != null)
         {
-            musicSource.clip = musicClip;
+            musicSource.clip = normalTheme;
             musicSource.Play();
         }
-
-        if (sfxClip != null)
-        {
-            sfxSource.clip = sfxClip;
-        }
+        
+        musicDictionary.Add("normal", normalTheme);
+        musicDictionary.Add("sad", sadTheme);
+        musicDictionary.Add("intense", intenseTheme);
     }
 
-    public void ChangeMusic(AudioClip clip)
+    public void StopMusic()
     {
         musicSource.Stop();
+    }
+
+    public void ChangeMusic(string musicName)
+    {
+        musicSource.Stop();
+        
+        var clip = musicDictionary[musicName];
         musicSource.clip = clip;
+        
         musicSource.Play();
     }
 

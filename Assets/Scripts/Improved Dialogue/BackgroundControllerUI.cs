@@ -51,6 +51,9 @@ public class BackgroundControllerUI : MonoBehaviour
             case "cg1":
                 currentBackground = 5;
                 break;
+            case "death":
+                currentBackground = 6;
+                break;
         }
         
         backgroundImage.sprite = backgrounds[currentBackground];
