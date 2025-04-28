@@ -7,6 +7,7 @@ public class SpriteControllerRemyUI : MonoBehaviour
     private Image image;
     public Sprite[] sprites;
     public int currentSprite = 0;
+    public Animator CharacterFade;
     
     void Start()
     {
@@ -40,5 +41,13 @@ public class SpriteControllerRemyUI : MonoBehaviour
     public void ChangeOpacity(int opacity)
     {
         image.color = new Color(1, 1, 1, opacity);
+        if (opacity >= 1)
+        {
+            CharacterFade.SetTrigger("FadeIn");
+        }
+        if (opacity <= 0)
+        {
+            CharacterFade.SetTrigger("FadeOut");
+        }
     }
 }
