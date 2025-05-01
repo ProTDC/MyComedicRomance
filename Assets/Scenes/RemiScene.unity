@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -848,7 +848,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 27e22b8722836854cb088c03acc33f29, type: 3}
   - {fileID: 21300000, guid: 035d15265fd8dac46ab6cee705168bfc, type: 3}
   currentSprite: 1
-  CharacterFade: {fileID: 1441908526}
+  characterFade: {fileID: 1441908526}
 --- !u!114 &1441908524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1018,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 4338356834664120760, guid: 2352d21783a6e154386e4acce50282bb, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: da94eedb1c9328b4586c637345546962, type: 3}
+      objectReference: {fileID: 4900000, guid: 04f471fc64dfc5c49a96066b71c61e47, type: 3}
     - target: {fileID: 4338356834664120760, guid: 2352d21783a6e154386e4acce50282bb, type: 3}
       propertyPath: message
       value: 

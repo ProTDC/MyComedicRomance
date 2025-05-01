@@ -7,18 +7,16 @@ public class SpriteControllerRemyUI : MonoBehaviour
     private Image image;
     public Sprite[] sprites;
     public int currentSprite = 0;
-    public Animator CharacterFade;
+    public Animator characterFade;
     
     void Start()
     {
         image = gameObject.GetComponent<Image>();
-        
-        ChangeOpacity(0);
     }
 
     public void ChangeSpriteRemy(string spriteName)
     {
-        ChangeOpacity(1);
+        ChangeOpacity(1, false);
         
         switch (spriteName)
         {
@@ -38,16 +36,21 @@ public class SpriteControllerRemyUI : MonoBehaviour
         image.sprite = sprites[currentSprite];
     }
     
-    public void ChangeOpacity(int opacity)
+    public void ChangeOpacity(int opacity, bool fade)
     {
+        if (opacity >= 1 && fade)
+        {
+            characterFade.Play("RemyFadein");
+            image.color = new Color(1, 1, 1, opacity);
+            Debug.Log("Fade In Triggered!");
+        }
+        else if (opacity <= 0 && fade)
+        {
+            characterFade.Play("RemyFadeout");
+            image.color = new Color(1, 1, 1, opacity);
+            
+        }
+        
         image.color = new Color(1, 1, 1, opacity);
-        if (opacity >= 1)
-        {
-            CharacterFade.SetTrigger("FadeIn");
-        }
-        if (opacity <= 0)
-        {
-            CharacterFade.SetTrigger("FadeOut");
-        }
     }
 }

@@ -15,7 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/RemiScene.unity
     guid: 142aad63074708c4f86e53e75371a398
   - enabled: 1
-    path: Assets/Scenes/Endofplaytest.unity
+    path: Assets/Scenes/EndOfPlaytest.unity
+    guid: faaf40f2744099f4ab5ed5336e22bf4e
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
     guid: 4a32fbe84f172df4ebb133df662573e8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

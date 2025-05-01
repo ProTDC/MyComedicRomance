@@ -34,9 +34,14 @@ public class DialogueManagerInky : MonoBehaviour
     public bool storyHalted = false;
     private string currentCharacter = string.Empty;
 
+    private const string wrongChoices = "wrongChoices";
+    private bool failedRomance;
+
     void Start()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
+        failedRomance = false;
         
         nameTagDictionary.Add("player", 0);
         nameTagDictionary.Add("remi", 1);
@@ -75,18 +80,31 @@ public class DialogueManagerInky : MonoBehaviour
                 FinishDialogue();
             }
         }
+
+        int numberChoices = (int)story.variablesState[wrongChoices];
+
+        if (numberChoices >= 4)
+        {
+            failedRomance = true;
+        }
+        
+        Debug.Log(failedRomance);
     }
     
     private void FinishDialogue()
     {
-        Debug.Log("End of Dialogue!");
         Destroy(dialoguePanel);
         Destroy(message);
         
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (!failedRomance && SceneManager.GetActiveScene().buildIndex == 2)
         {
             SceneManager.LoadScene(3);
         }
+        else if (failedRomance)
+        {
+            SceneManager.LoadScene(4);
+        }
+
     }
     
     void AdvanceDialogue()
@@ -156,7 +174,6 @@ public class DialogueManagerInky : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        Debug.Log(choiceIndex);
         story.ChooseChoiceIndex(choiceIndex);
         AdvanceDialogue();
         HideChoices();
@@ -210,11 +227,11 @@ public class DialogueManagerInky : MonoBehaviour
                 case visibilityTag:
                     if (tagValue == "true")
                     {
-                        spriteControllerRemy.ChangeOpacity(1);
+                        spriteControllerRemy.ChangeOpacity(1, true);
                     }
                     if (tagValue == "false")
                     {
-                        spriteControllerRemy.ChangeOpacity(0);
+                        spriteControllerRemy.ChangeOpacity(0, true);
                     }
                     break;
                 
