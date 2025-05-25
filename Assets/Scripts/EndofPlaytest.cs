@@ -10,7 +10,7 @@ public class EndofPlaytest : MonoBehaviour
     
     void Start()
     {
-        StartCoroutine(WideRemi(0f, 1f, 8f));
+        // StartCoroutine(WideRemi(0f, 1f, 8f));
         Invoke(nameof(LoadMainMenu), 8f);
     }
 

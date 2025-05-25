@@ -6,18 +6,15 @@ public class SpriteControllerRingmasterUI : MonoBehaviour
     private Image image;
     public Sprite[] sprites;
     public int currentSprite = 0;
+    public Animator characterFade;
 
     void Start()
     {
         image = gameObject.GetComponent<Image>();
-
-        ChangeOpacity(0);
     }
 
     public void ChangeSpriteRingmaster(string spriteName)
     {
-        ChangeOpacity(1);
-
         switch (spriteName)
         {
             case "neutral":
@@ -33,9 +30,22 @@ public class SpriteControllerRingmasterUI : MonoBehaviour
 
         image.sprite = sprites[currentSprite];
     }
-    
-    public void ChangeOpacity(int opacity)
+
+    public void ChangeColor(float r, float g, float b, float a)
     {
-        image.color = new Color(1, 1, 1, opacity);
+        image.color = new Color(r, g, b, a);
+    }
+    
+    public void ChangeOpacity(int opacity, bool fade)
+    {
+        if (opacity >= 1 && fade)
+        {
+            characterFade.Play("Fade_Start");
+        }
+        else if (opacity <= 0 && fade)
+        {
+            characterFade.Play("Fade_End");
+            
+        }
     }
 }

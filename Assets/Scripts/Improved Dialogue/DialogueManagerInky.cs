@@ -37,6 +37,9 @@ public class DialogueManagerInky : MonoBehaviour
     private const string wrongChoices = "wrongChoices";
     private bool failedRomance;
 
+    private bool remiSpeaking;
+    private bool ringmasterSpeaking;
+
     void Start()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
@@ -87,8 +90,6 @@ public class DialogueManagerInky : MonoBehaviour
         {
             failedRomance = true;
         }
-        
-        Debug.Log(failedRomance);
     }
     
     private void FinishDialogue()
@@ -113,6 +114,8 @@ public class DialogueManagerInky : MonoBehaviour
         {
             item.SetActive(false);
         }
+        spriteControllerRingmaster.ChangeColor(.6f, .6f, .6f, 1f);
+        spriteControllerRemy.ChangeColor(.6f, .6f, .6f, 1f);
         
         string currentSentence = story.Continue();
         ParseTags(story.currentTags);
@@ -190,15 +193,31 @@ public class DialogueManagerInky : MonoBehaviour
             }
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
-
+            
             switch (tagKey)
             {
                 case backgroundTag:
                     backgroundController.ChangeBackground(tagValue);
                     break;
+                
                 case speakerTag:
                     currentCharacter = tagValue;
                     nameTags[nameTagDictionary[tagValue]].SetActive(true);
+                    Debug.Log(tagValue);
+                    
+                    spriteControllerRingmaster.ChangeColor(.6f, .6f, .6f, 1f);
+                    spriteControllerRemy.ChangeColor(.6f, .6f, .6f, 1f);
+                    
+                    if (tagValue == "remi")
+                    {
+                        Debug.Log("remi triggered!");
+                        spriteControllerRemy.ChangeColor(1f, 1f, 1f, 1f);
+                    }
+
+                    if (tagValue == "ringmaster")
+                    {
+                        spriteControllerRingmaster.ChangeColor(1f, 1f, 1f, 1f);
+                    }
                     break;
                 
                 case spriteTag:
@@ -206,6 +225,7 @@ public class DialogueManagerInky : MonoBehaviour
                     {
                         spriteControllerRemy.ChangeSpriteRemy(tagValue);
                     }
+                    
                     if (currentCharacter == "ringmaster")
                     {
                         spriteControllerRingmaster.ChangeSpriteRingmaster(tagValue);
@@ -225,7 +245,7 @@ public class DialogueManagerInky : MonoBehaviour
                     break;
                 
                 case visibilityTag:
-                    if (tagValue == "true")
+                    if (tagValue == "true" )
                     {
                         spriteControllerRemy.ChangeOpacity(1, true);
                     }
@@ -236,11 +256,14 @@ public class DialogueManagerInky : MonoBehaviour
                     break;
                 
                 case ringmasterVisibilityTag:
+                    if (tagValue == "true")
+                    {
+                        spriteControllerRingmaster.ChangeOpacity(1, true);
+                    }
                     if (tagValue == "false")
                     {
-                        spriteControllerRingmaster.ChangeOpacity(0);
+                        spriteControllerRingmaster.ChangeOpacity(0, true);
                     }
-
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
